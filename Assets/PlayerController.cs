@@ -38,14 +38,14 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.UpArrow) == true)
         {
             //transform.Translate(Vector3.forward * speed * Time.deltaTime);
-            playerRd.AddForce(speed, 0f, 0f);
+            playerRd.AddForce(0f, 0f, speed);
 
         }
         
         if(Input.GetKey(KeyCode.DownArrow) == true)
         {
             //transform.Translate(Vector3.back * speed * Time.deltaTime);
-            playerRd.AddForce(-speed, 0f, 0f);
+            playerRd.AddForce(0f, 0f, -speed);
 
         }
     }
