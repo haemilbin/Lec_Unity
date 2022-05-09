@@ -48,5 +48,7 @@ public class PlayerController : MonoBehaviour
             playerRd.AddForce(0f, 0f, -speed);
 
         }
+
+        
     }
 }
